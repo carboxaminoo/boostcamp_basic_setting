@@ -1,2 +1,19 @@
 apt-get update && apt-get upgrade
+
 apt-get install vim -y
+
+## 언어 설정 ##
+
+vi ~/.bashrc
+"
+LANG="ko_KR.UTF-8"
+export LANG="ko_KR.UTF-8"
+"
+
+vi ~/.vimrc
+"
+set encoding=utf-8
+set fileencodings=utf-8,euc-kr
+"
+source ~/.bashrc &&source ~/.vimrc
+
